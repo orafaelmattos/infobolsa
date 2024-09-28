@@ -1,8 +1,16 @@
+import React, { useContext } from 'react';
 import './header.css';
 import logo from '../../assets/logo.png';
 import { FiMenu } from "react-icons/fi";
+import { ApiContext } from '../../contexts/contextApi';
 
 export default function Header(){
+
+    const { data } = useContext(ApiContext);
+
+    console.log(data);
+    
+
     return(
         <div className='container-area'>
            <img src={logo} alt='logo' />
