@@ -2,7 +2,7 @@
     background-color: transparent;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100px;
     padding: 0 70px;
@@ -16,7 +16,7 @@
     font-size: 25px;
     transition: 0.3s;
     margin-left: 10px;
-    margin-right: 700px;
+    margin-right: 10px;
     height: 40px;
     cursor: pointer;
 }
@@ -34,7 +34,6 @@
     height: 40px;
     border-radius: 40px;
     padding: 30px;
-    position: fixed;
 }
 
 .information h2{
@@ -50,12 +49,47 @@
     color: blueviolet;
 }
 
-@media (max-width: 768px) {
+.cotation-dollar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cotation-dollar img{
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.cotation-dollar span h2{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.cotation-coin{
+    display: flex;
+    animation: slideUp 0.7s ease-in-out;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 850px) {
     .container-area {
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         height: auto;
-        padding: 0 20px;
+        padding: 0 50px;
     }
 
     .container-area h1 {
@@ -64,14 +98,16 @@
         font-weight: lighter;
         text-align: center;
         padding: 30px;
-        margin-left: 20px;
-        margin-right: 20px;
         transition: 0.3s;
     }
     .container-area img {
         text-align: center;
         margin-left: 50px;
         margin-right: 20px;
+    }
+
+    .cotation-dollar {
+        display: none;
     }
 
     .information {
