@@ -6,7 +6,7 @@
 .image-container {
     position: relative;  
     width: 100%;
-    height: 350px;       
+    height: 300px;       
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -48,16 +48,23 @@
 
 .title h1{
     margin-left: 17px;
+    background-image: linear-gradient(45deg, #d400ff, #6200ff); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    background-clip: text;
+    font-weight: 900;
+    
 }
 .title p{
     margin-left: 20px;
+    font-weight: lighter;
 }
 
 .typing {
     width: 230px;
     overflow: hidden;
     white-space: nowrap;
-    border-right: 2px solid #7E2EA0;
+    border-right: 2px solid #ffffff;
     animation: typing 2s steps(12, end), cursor .4s steps(12, end) infinite;
 }
 @keyframes typing {
@@ -67,6 +74,48 @@
     50% { border-color: transparent }
 }
 
+@media (max-width: 768px) {
+
+    .image-container{
+        height: 250px;
+    }
+
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content img {
+        width: 15%; 
+        margin-left: 20px;
+    }
+
+    .title h1 {
+        font-size: 1.5rem; 
+    }
+    .title p {
+        text-align: left;
+    }
+
+    .typing {
+        width: 235px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .content img {
+        width: 20%; 
+    }
+
+    .title h1 {
+        font-size: 1.2rem; /* Reduzindo ainda mais o tamanho da fonte */
+    }
+
+    .typing {
+        width: 185px; /* Ajustando largura para telas muito pequenas */
+    }
+}
 
 
 
