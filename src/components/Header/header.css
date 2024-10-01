@@ -11,6 +11,8 @@
 
 .container-area h1{
     display: none;
+    color: blueviolet;
+    margin-right: 50px;
 }
 .container-area img{
     color: white;
@@ -22,10 +24,6 @@
     cursor: pointer;
 }
 
-.container-area h1:hover{
-    color: blueviolet;
-    cursor: pointer;
-}
 
 .information{
     display: flex;
@@ -84,7 +82,7 @@
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 800px) {
     .container-area {
         flex-direction: row;
         justify-content: space-between;

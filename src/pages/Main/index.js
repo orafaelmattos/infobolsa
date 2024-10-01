@@ -6,6 +6,8 @@ import { TbZoomMoney } from "react-icons/tb";
 import { PiMoney } from "react-icons/pi";
 import { useContext } from 'react';
 import { ApiContext } from '../../contexts/contextApi';
+import { RiBitCoinLine } from "react-icons/ri";
+
 
 export default function Main(){
 
@@ -65,7 +67,7 @@ export default function Main(){
                     <div className='card-border'>
                         <div className='card'>
                             <div className='card-image'>
-                                <h1><TbZoomMoney/></h1>
+                                <h1><RiBitCoinLine/></h1>
                             </div>
 
                             <div className='card-info'>
@@ -82,6 +84,7 @@ export default function Main(){
 
 
             </div>
+            
         </div>
     )
 }

@@ -146,7 +146,27 @@
     50% { border-color: transparent }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .card-container{
+        padding: 0;
+    }
+
+    .card-container h2{
+        text-align: center;
+    }
+
+    .card-container h1{
+        text-align: center;
+    }
+
+    .card-border {
+        margin-top: 30px;
+    }
 
     .image-container{
         height: 250px;
