@@ -1,12 +1,14 @@
 .container{
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .image-container {
     position: relative;  
     width: 100%;
-    height: 300px;       
+    height: 350px;       
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -67,6 +69,76 @@
     border-right: 2px solid #ffffff;
     animation: typing 2s steps(12, end), cursor .4s steps(12, end) infinite;
 }
+
+.cards{
+    display: flex;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.card-container h1{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.card-container h2{
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.card-border{
+    border: rgb(129, 129, 129) solid 2px;
+    border-radius: 10%;
+    padding: 10px;
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card{
+    background-color: rgb(44, 44, 44);
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-image{
+    width: 100px;
+}
+
+.card-image h1{
+    font-size: 50px;
+    text-align: left;
+    color: #d400ff;
+}
+
+.card-title{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.card-variation{
+    display: flex;
+    align-items: center;
+}
+
+.card-variation p{
+    margin-right: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
 @keyframes typing {
     from { width: 0 }
 }
