@@ -33,6 +33,22 @@
     opacity: 0;
   }
 
+  .modal-item{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    margin-left: 15px;
+    width: 50%;
+  }
+
+  .modal-item p{
+    color: blueviolet;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: solid 1px blueviolet;
+  }
+
   button{
     margin-left: 20px;
     margin-top: 20px;

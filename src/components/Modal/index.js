@@ -13,6 +13,12 @@ export default function Modal({ isOpen, setIsOpen }){
         <div className={`modal-overlay ${isOpen ? 'modal-open' : 'modal-closed'}`}>
             <div className='modal'>
                 <button onClick={closeModal}><IoMdClose /></button>
+                <div className='modal-item'>
+                    <p>Início</p>
+                    <p>Cotações</p>
+                    <p>Bolsa</p>
+                    <p>Criptomoedas</p>
+                </div>
             </div>
         </div>
     )
