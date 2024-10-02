@@ -9,6 +9,12 @@ import Modal from '../Modal';
 export default function Header(){
 
     const { data } = useContext(ApiContext);
+    const [ isOpen, setIsOpen ] = useState(false);
+
+    function openModal(){
+        setIsOpen(true)
+        
+    }
     
     return (
         <div className='container-area'>
@@ -21,8 +27,11 @@ export default function Header(){
                 <h2>Criptomoedas</h2>
            </div>
 
-            
-           <h1><FiMenu/></h1>
+           <button onClick={openModal} style={{ display: isOpen ? 'none' : 'flex' }}>
+                <h1><FiMenu/></h1>
+            </button>
+
+           
 
            <div className='cotation-dollar'>
                 <span><h2>Dólar Americano:</h2></span>
@@ -31,7 +40,7 @@ export default function Header(){
                     <h2>$ {data?.currencies?.USD.buy.toFixed(2)}</h2>
                 </div>
            </div>
-
+            <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
     );
 }

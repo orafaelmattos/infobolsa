@@ -1,42 +1,52 @@
-/* Estilos gerais para o modal */
+
 .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto com opacidade */
-    display: none; /* Escondido por padrão */
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none; 
     justify-content: flex-end;
-    z-index: 999; /* Garantir que o modal esteja acima dos outros elementos */
-  }
+    z-index: 999; 
+}
   
   .modal {
     background-color: white;
-    width: 50%; /* Ocupa metade da tela */
+    width: 50%; 
     height: 100%;
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
   }
 
   .modal-open {
-    display: flex; /* Modal visível */
+    display: flex;
     opacity: 1;
   }
   
   .modal-closed {
-    display: none; /* Modal escondido */
+    display: none; 
     opacity: 0;
   }
+
+  .modal-closed button{
+    display: none; 
+    opacity: 0;
+  }
+
+  button{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: blueviolet;
+  }
   
-  /* Mostrar o modal apenas abaixo de 800px */
   @media (max-width: 800px) {
     .modal-overlay {
-      display: flex; /* Mostrar o modal como flex para centralizar o conteúdo à direita */
+      display: flex; 
     }
   }
   
-  /* Desabilitar o scroll da página quando o modal estiver aberto */
   .modal-open {
-    overflow: hidden; /* Desabilita o scroll da página */
+    overflow: hidden; 
   }
   
