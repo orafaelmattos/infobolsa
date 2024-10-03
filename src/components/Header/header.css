@@ -35,6 +35,10 @@
     padding: 30px;
 }
 
+.information a{
+    text-decoration: none;
+}
+
 .information h2{
     font-size: 16px;
     font-weight: lighter;
@@ -53,6 +57,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: white;
 }
 
 .cotation-dollar img{

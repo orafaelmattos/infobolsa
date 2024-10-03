@@ -5,6 +5,7 @@ import bandeira from '../../assets/estados-unidos.png';
 import { FiMenu } from "react-icons/fi";
 import { ApiContext } from '../../contexts/contextApi';
 import Modal from '../Modal';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
     const { data } = useContext(ApiContext);
@@ -34,10 +35,10 @@ export default function Header() {
             <img src={logo} alt='logo' />
 
             <div className='information'>
-                <h2>Início</h2>
-                <h2>Cotações</h2>
-                <h2>Bolsa</h2>
-                <h2>Criptomoedas</h2>
+                <Link to='/'><h2>Início</h2></Link>
+                <Link to='/cotacao'><h2>Cotações</h2></Link>
+                <Link to='/bolsa'><h2>Bolsa</h2></Link>
+                <Link to='/cripto'><h2>Criptomoedas</h2></Link>
             </div>
 
             <button onClick={openModal} style={{ display: isOpen ? 'none' : (isMobile ? 'flex' : 'none') }}>

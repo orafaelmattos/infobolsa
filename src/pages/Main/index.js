@@ -57,7 +57,7 @@ export default function Main(){
                             <div className='card-info'>
                                 <p className='card-title'>{data?.currencies?.USD.name}</p>
                                 <div className='card-variation'>
-                                    <p>USD ${data?.currencies?.USD.buy}</p>
+                                    <p>USD ${data?.currencies?.USD.buy.toFixed(2)}</p>
                                     <p style={{ color: data?.currencies?.USD.variation < 0 ? '#FF033E' : 'green', fontSize: '12px' }} >{data?.currencies?.USD.variation.toFixed(2)}</p>
                                 </div>
                             </div>

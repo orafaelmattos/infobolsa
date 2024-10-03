@@ -1,5 +1,6 @@
 import './modal.css';
 import { IoMdClose } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 export default function Modal({ isOpen, setIsOpen }){
 
@@ -14,10 +15,10 @@ export default function Modal({ isOpen, setIsOpen }){
             <div className='modal'>
                 <button onClick={closeModal}><IoMdClose /></button>
                 <div className='modal-item'>
-                    <p>Início</p>
-                    <p>Cotações</p>
-                    <p>Bolsa</p>
-                    <p>Criptomoedas</p>
+                    <Link to='/'><p>Início</p></Link>
+                    <Link to='/cotacao'><p>Cotações</p></Link>
+                    <Link to='/bolsa'><p>Bolsa</p></Link>
+                    <Link to='/cripto'><p>Criptomoedas</p></Link>
                 </div>
             </div>
         </div>

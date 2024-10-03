@@ -41,6 +41,10 @@
     width: 50%;
   }
 
+  .modal-item a{
+    text-decoration: none;
+  }
+
   .modal-item p{
     color: blueviolet;
     margin-top: 20px;
