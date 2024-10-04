@@ -2,6 +2,7 @@ import './main.css';
 import Header from '../../components/Header/index';
 import Image from '../../assets/bolsa de valores.jpg';
 import Logo from '../../assets/logo.png';
+import QuemSomos from '../../components/QuemSomos';
 import { TbZoomMoney } from "react-icons/tb";
 import { PiMoney } from "react-icons/pi";
 import { useContext } from 'react';
@@ -73,7 +74,12 @@ export default function Main(){
                             <div className='card-info'>
                                 <p className='card-title'>{data?.bitcoin?.mercadobitcoin.name}</p>
                                 <div className='card-variation'>
-                                    <p>{data?.bitcoin?.mercadobitcoin.buy.toFixed(2)}</p>
+                                    <p>
+                                    {new Intl.NumberFormat('pt-BR', { 
+                                        style: 'currency', 
+                                        currency: 'BRL' 
+                                    }).format(data?.bitcoin?.mercadobitcoin.buy)}
+                                    </p>
                                     <p style={{ color: data?.bitcoin?.mercadobitcoin.variation < 0 ? '#FF033E' : 'green', fontSize: '12px' }} >{data?.bitcoin?.mercadobitcoin.variation.toFixed(2)}</p>
                                 </div>
                             </div>
@@ -84,7 +90,9 @@ export default function Main(){
 
 
             </div>
-            
+           
+            <QuemSomos/>
+
         </div>
     )
 }
