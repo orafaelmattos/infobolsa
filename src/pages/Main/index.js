@@ -3,6 +3,7 @@ import Header from '../../components/Header/index';
 import Image from '../../assets/bolsa de valores.jpg';
 import Logo from '../../assets/logo.png';
 import QuemSomos from '../../components/QuemSomos';
+import InformacaoAdicional from '../../components/InformaçõesAdicionais';
 import { TbZoomMoney } from "react-icons/tb";
 import { PiMoney } from "react-icons/pi";
 import { useContext } from 'react';
@@ -42,7 +43,10 @@ export default function Main(){
                             <div className='card-info'>
                                 <p className='card-title'>{data?.stocks?.IBOVESPA.name}</p>
                                 <div className='card-variation'>
-                                    <p>{data?.stocks?.IBOVESPA.points.toFixed(2)}</p>
+                                    <p>{new Intl.NumberFormat('pt-BR', { 
+                                        style: 'currency', 
+                                        currency: 'BRL' 
+                                    }).format(data?.stocks?.IBOVESPA.points.toFixed(2))}</p>
                                     <p style={{ color: data?.stocks?.IBOVESPA.variation < 0 ? '#FF033E' : 'green', fontSize: '12px' }} >{data?.stocks?.IBOVESPA.variation.toFixed(2)}</p>
                                 </div>
                             </div>
@@ -92,7 +96,7 @@ export default function Main(){
             </div>
            
             <QuemSomos/>
-
+            <InformacaoAdicional/>
         </div>
     )
 }

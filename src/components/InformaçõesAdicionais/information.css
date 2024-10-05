@@ -1,0 +1,85 @@
+.information-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.information-border{
+    border: 2px solid rgb(107, 107, 107);
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 30px;
+    max-width: 600px;
+}
+
+.dollar-border{
+    border: 2px solid rgb(107, 107, 107);
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 30px;
+    max-width: 600px;
+}
+
+.information-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(44, 44, 44);
+    padding: 30px;
+    border-radius: 30px;
+    width: 500px;
+}
+
+.dollar-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(44, 44, 44);
+    padding: 30px;
+    border-radius: 30px;
+    width: 500px;
+}
+
+.information-card a{
+    text-decoration: none;
+    color: white;
+}
+
+.information-card h1{
+    font-weight: lighter;
+    color: white;
+    
+}
+
+.information-img{
+    width: 130px;
+    margin-right: 20px;
+}
+
+.dollar-img{
+    width: 130px;
+    margin-left: 40px;
+}
+
+.dollar-text{
+    text-align: right;
+}
+
+.dollar-text a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.information-img img{
+    width: 90%;
+    border-radius: 50%;
+}
+
+.dollar-img img{
+    width: 90%;
+    border-radius: 50%;
+}
