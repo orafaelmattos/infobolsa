@@ -4,6 +4,7 @@ import Image from '../../assets/bolsa de valores.jpg';
 import Logo from '../../assets/logo.png';
 import QuemSomos from '../../components/QuemSomos';
 import InformacaoAdicional from '../../components/InformaçõesAdicionais';
+import Footer from '../../components/Footer';
 import { TbZoomMoney } from "react-icons/tb";
 import { PiMoney } from "react-icons/pi";
 import { useContext } from 'react';
@@ -97,6 +98,7 @@ export default function Main(){
            
             <QuemSomos/>
             <InformacaoAdicional/>
+            <Footer/>
         </div>
     )
 }

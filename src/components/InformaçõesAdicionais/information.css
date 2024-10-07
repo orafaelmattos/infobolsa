@@ -83,3 +83,51 @@
     width: 90%;
     border-radius: 50%;
 }
+
+@media (max-width: 768px) {
+    .information-border{
+        border: 2px solid rgb(107, 107, 107);
+        padding: 10px;
+        margin-top: 50px;
+        border-radius: 30px;
+        max-width: 400px;
+    }
+
+    .information-card{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(44, 44, 44);
+        padding: 30px;
+        border-radius: 30px;
+        width: 300px;
+        height: 250px;
+    }
+
+    .dollar-card{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(44, 44, 44);
+        padding: 30px;
+        border-radius: 30px;
+        width: 300px;
+        height: 250px;
+    }
+
+    .information-img img{
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .dollar-img img{
+        width: 60%;
+        border-radius: 50%;
+    } 
+
+    .dollar-img {
+        margin-left: 20px;
+    }    
+  }
