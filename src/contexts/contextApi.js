@@ -13,7 +13,7 @@ export default function ContextApi({ children }) {
 
         const fetchData = async () => {
             try {
-                const response = await axios.get(`https://api.hgbrasil.com/finance?format=json-cors&key=${apiKEYSite}`);
+                const response = await axios.get(`https://api.hgbrasil.com/finance?format=json-cors&key=a77fb552`);
                 setData(response.data.results); 
                 
             } catch (error) {
