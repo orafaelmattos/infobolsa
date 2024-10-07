@@ -9,10 +9,11 @@ export default function ContextApi({ children }) {
 
     useEffect(() => {
         const apiKEY = '04f6ca94';
+        const apiKEYSite = 'a77fb552';
 
         const fetchData = async () => {
             try {
-                const response = await axios.get(`https://api.hgbrasil.com/finance?format=json-cors&key=${apiKEY}`);
+                const response = await axios.get(`https://api.hgbrasil.com/finance?format=json-cors&key=${apiKEYSite}`);
                 setData(response.data.results); 
                 
             } catch (error) {
