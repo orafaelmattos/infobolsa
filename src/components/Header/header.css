@@ -89,6 +89,7 @@ button {
     font-size: 16px;           
     border-radius: 5px;   
     margin-bottom: 20px;   
+    margin-left: 50px;
     transition: background-color 0.3s ease;
 }
 
@@ -124,7 +125,7 @@ button {
     }
     .container-area img {
         text-align: center;
-        margin-left: 50px;
+        margin-left: 30px;
         margin-right: 20px;
     }
 
