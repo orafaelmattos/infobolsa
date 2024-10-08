@@ -33,7 +33,7 @@
 
     .container-title{
         text-align: center;
-        width: 70%;
+        width: 300px;
         font-size: 15px;
         margin-right: 0;
         display: flex;
@@ -41,8 +41,19 @@
         align-items: center;
     }
 
+    .container-title h1{
+        font-size: 30px;
+        width: 300px;
+    }
+
+    .container-title h2{
+        font-weight: lighter;
+        width: 800px;
+    }
+
     .container-image{
-        width: 60%;
+        width: 400px;
         margin-top: 20px;
     }
+
 }
