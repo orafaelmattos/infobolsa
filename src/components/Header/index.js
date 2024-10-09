@@ -48,7 +48,7 @@ export default function Header() {
             <div className='cotation-dollar'>
                 <span><h2>Dólar Americano:</h2></span>
                 <div className='cotation-coin'>
-                    <img src={bandeira} alt='Dollar' />
+                    <img src={bandeira} alt='Dollar'/>
                     <h2>$ {data?.currencies?.USD.buy.toFixed(2)}</h2>
                 </div>
             </div>

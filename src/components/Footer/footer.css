@@ -9,11 +9,11 @@
 }
 
 .footer-info{
-    width: 20%;
+    width: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 .footer-info img{
@@ -24,14 +24,14 @@
 }
 
 .footer-info h1{
-    width: 200px;
+    width: 150px;
     font-size: 15px;
     font-weight: lighter;
 }
 
 .footer-api h2{
-font-weight: lighter;
-font-size: 20px;
+    font-weight: lighter;
+    font-size: 20px;
 }
 
 .footer-api a{
@@ -54,6 +54,7 @@ transition: 0.2s;
 
     .footer-info h1{
         font-size: 10px;
+        width: 140px;
     }
 
     .footer-api h2{ 
