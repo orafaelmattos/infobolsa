@@ -1,0 +1,56 @@
+.money-container{
+    background-color: rgb(20, 20, 20);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.money-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 350px;
+}
+
+.money-title p{
+    font-weight: bold;
+    background-image: linear-gradient(45deg, #d400ff, #6200ff); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.money-title-border{
+    border: solid 2px blueviolet;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.money-card{
+    height: 150px;
+    background-color: rgb(54, 54, 54);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.money-card h3{
+    background-image: linear-gradient(45deg, #d400ff, #6200ff); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    margin-right: 20px;
+}
+
+.money-card-border{
+    border: rgb(129, 129, 129) solid 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}

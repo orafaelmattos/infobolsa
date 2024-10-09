@@ -74,6 +74,11 @@
     display: flex;
 }
 
+.card-border:hover{
+    scale: 105%;
+    cursor: pointer;
+}
+
 .card-container{
     display: flex;
     justify-content: center;
