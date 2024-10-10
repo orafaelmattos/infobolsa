@@ -35,7 +35,7 @@ export default function Money({ moneyOpen, setMoneyOpen }){
     return(
         <div className={`${moneyOpen ? 'money-open' : 'money-closed'}`}>
             <div className='cash-close' >
-             <p><IoIosClose onClick={closeMoney} /></p>
+             <p><IoIosClose onClick={closeMoney} style={{ cursor: 'pointer', color: 'white'}}/></p>
             </div>
             {currencies && 
                     Object.keys(currencies).map((currencyKey) => {
