@@ -78,6 +78,19 @@
     animation: slideUp 0.7s ease-in-out;
 }
 
+.container-area h1 {
+    display: none;
+    color: blueviolet;
+}
+
+.money-open h1 {
+    display: block; 
+    font-size: 18px; 
+    margin: 10px 0;
+    text-align: center;
+}
+
+
 button {
     z-index: 1000;
     position: relative; 

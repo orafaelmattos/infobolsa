@@ -5,11 +5,13 @@ import bandeira from '../../assets/estados-unidos.png';
 import { FiMenu } from "react-icons/fi";
 import { ApiContext } from '../../contexts/contextApi';
 import Modal from '../Modal';
+import Money from '../Money';
 import { Link } from 'react-router-dom';
 
 export default function Header() {
     const { data } = useContext(ApiContext);
     const [isOpen, setIsOpen] = useState(false);
+    const [ moneyOpen, setMoneyOpen ] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 800); 
 
     function openModal() {
@@ -30,6 +32,10 @@ export default function Header() {
         };
     }, []);
 
+    function openMoney(){
+        setMoneyOpen(true);
+    }
+
     return (
         <div className='container-area'>
             <img src={logo} alt='logo' />
@@ -45,13 +51,14 @@ export default function Header() {
                 <h1><FiMenu /></h1>
             </button>
 
-            <div className='cotation-dollar'>
+            <div className='cotation-dollar' onClick={openMoney}>
                 <span><h2>Dólar Americano:</h2></span>
                 <div className='cotation-coin'>
                     <img src={bandeira} alt='Dollar'/>
-                    <h2>$ {data?.currencies?.USD.buy.toFixed(2)}</h2>
+                    <h2>R$ {data?.currencies?.USD.buy.toFixed(2)}</h2>
                 </div>
             </div>
+            <Money moneyOpen={moneyOpen} setMoneyOpen={setMoneyOpen} />
             <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
     );
