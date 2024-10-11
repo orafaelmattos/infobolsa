@@ -8,7 +8,6 @@ export default function Cotacao(){
 
     const { data } = useContext(ApiContext);
     const currencies = data?.currencies;
-    console.log(currencies);
     
     
 
