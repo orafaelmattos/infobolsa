@@ -16,7 +16,9 @@ export default function Bolsa(){
         <div>
             <Header/>
             <div className='bolsa-container'>
-                <div>
+                <div className='bolsa-title'>
+                    <h1>De olho na Bolsa!</h1>
+                </div>
                     {currencies && 
                     Object.keys(currencies).map((currencyKey) => {
                     const currency = currencies[currencyKey];
@@ -37,7 +39,7 @@ export default function Bolsa(){
                     );
                     })
                 }
-                </div>
+                
             </div>
             <Footer/>
         </div>
