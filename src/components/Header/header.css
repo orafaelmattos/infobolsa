@@ -2,7 +2,7 @@
     background-color: transparent;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 130px;
     padding: 0 70px;
@@ -33,6 +33,8 @@
     height: 40px;
     border-radius: 40px;
     padding: 30px;
+    position: relative;
+    left: 45px;
 }
 
 .information a{
@@ -58,8 +60,7 @@
     align-items: center;
     flex-direction: column;
     color: white;
-    position: relative;
-    left: 10px;
+    margin-left: 20px;
 }
 
 .cotation-dollar img{
@@ -117,7 +118,7 @@ button {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     
     .container-area {
         flex-direction: row;

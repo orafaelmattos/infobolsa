@@ -7,7 +7,7 @@
     flex-direction: column;
     position: relative; 
     overflow: hidden; 
-    background-image: url('https://einvestidor.estadao.com.br/wp-content/uploads/2024/06/bolsas-de-valores_210620243347.jpeg');
+    background-image: url('../../assets/bg-bolsa.jpeg');
     background-size: cover;
     background-position: center;
 }
@@ -102,7 +102,7 @@
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .bolsa-card-border {
         width: 90%; 
     }

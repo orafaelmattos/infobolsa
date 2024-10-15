@@ -46,7 +46,7 @@ transition: 0.2s;
     color: blueviolet;
 }
 
-@media(max-width: 769px){
+@media(max-width: 900px){
 
     .footer-container{
         height: 130px;

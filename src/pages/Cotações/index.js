@@ -17,12 +17,9 @@ export default function Cotacao(){
             <div className="money-container">
 
                 <div className="money-title">
-                    <div className="money-title-border">
                         <p>Moeda</p>
-                    </div>
-                    <div className="money-title-border">
+
                         <p>Informações</p>
-                    </div>
                 </div>
 
                 <div>

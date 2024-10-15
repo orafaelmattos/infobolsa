@@ -1,4 +1,4 @@
-.money-container{
+.money-container {
     background-color: rgb(20, 20, 20);
     color: white;
     display: flex;
@@ -6,31 +6,52 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 40px;
+    background-image: url('../../assets/bolsa\ de\ valores2.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    overflow: hidden;
 }
 
-.money-title{
+.money-container::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85); 
+}
+
+.money-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 20px;
-    width: 350px;
+    width: 80%;
+    max-width: 470px;
+    z-index: 2; 
+    position: relative; 
+    border: solid 2px blueviolet;
+    padding: 30px;
+    border-radius: 15px;
 }
 
-.money-title p{
+.money-title p {
     font-weight: bold;
     background-image: linear-gradient(45deg, #d400ff, #6200ff); 
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
 }
 
-.money-title-border{
+.money-title-border {
     border: solid 2px blueviolet;
     padding: 10px;
     border-radius: 15px;
 }
 
-.money-card{
+.money-card {
     height: 150px;
     background-color: rgb(54, 54, 54);
     border-radius: 10px;
@@ -38,21 +59,26 @@
     align-items: center;
     justify-content: space-between;
     padding: 30px;
+    z-index: 2; 
+    position: relative; 
 }
 
-.money-card h3{
+.money-card h3 {
     background-image: linear-gradient(45deg, #d400ff, #6200ff); 
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
     margin-right: 20px;
 }
 
-.money-card-border{
-    border: rgb(129, 129, 129) solid 2px;
+.money-card-border {
+    border: rgba(129, 129, 129) solid 2px;
+    z-index: 999;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     padding: 10px;
     margin-left: 20px;
     margin-right: 20px;
+    position: relative; 
+    z-index: 1;
 }
