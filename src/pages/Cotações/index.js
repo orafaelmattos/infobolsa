@@ -1,6 +1,6 @@
 import Header from "../../components/Header";
 import './money.css';
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ApiContext } from "../../contexts/contextApi";
 import Footer from "../../components/Footer";
 
@@ -9,7 +9,9 @@ export default function Cotacao(){
     const { data } = useContext(ApiContext);
     const currencies = data?.currencies;
     
-    
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return(
         <div>

@@ -1,14 +1,17 @@
 import './bolsa.css';
 import Header from "../../components/Header";
 import { ApiContext } from '../../contexts/contextApi';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import Footer from '../../components/Footer';
 
 export default function Bolsa(){
 
     const { data } = useContext(ApiContext);
     const currencies = data?.stocks;
-    console.log(currencies);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     
     
 
