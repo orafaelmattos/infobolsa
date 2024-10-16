@@ -18,7 +18,7 @@ export default function Cotacao(){
             <Header/>
             <div className="money-container">
 
-                <div className="money-title">
+                <div className="money-title cssanimation fadeIn">
                         <p>Moeda</p>
 
                         <p>Informações</p>
@@ -33,15 +33,15 @@ export default function Cotacao(){
                 if(currencyKey === 'BTC')return null
                 
                 return (
-                    <div className="money-card-border">
+                    <div className="money-card-border cssanimation fadeIn">
                         <div key={currencyKey} className="money-card">
                                 <h3>{currency.name} ({currencyKey})</h3>
                             <div>
-                                <p>Compra: {new Intl.NumberFormat('pt-BR', { 
+                                <p>Compra: <span>{new Intl.NumberFormat('pt-BR', { 
                                         style: 'currency', 
                                         currency: 'BRL' 
-                                    }).format(currency.buy)}</p>
-                                <p>Variação: <span>{currency.variation}%</span></p>
+                                    }).format(currency.buy)}</span></p>
+                                <p>Variação: <span style={{ color: currency.variation < 0 ? '#e61919' : 'green'}} >{currency.variation}%</span></p>
                             </div>
                         </div>
                     </div>

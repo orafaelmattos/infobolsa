@@ -19,7 +19,7 @@ export default function Bolsa(){
         <div>
             <Header/>
             <div className='bolsa-container'>
-                <div className='bolsa-title'>
+                <div className='bolsa-title cssanimation fadeIn'>
                     <h1>De olho na Bolsa!</h1>
                 </div>
                     {currencies && 
@@ -27,7 +27,7 @@ export default function Bolsa(){
                     const currency = currencies[currencyKey];
                     
                     return (
-                        <div className="bolsa-card-border">
+                        <div className="bolsa-card-border cssanimation fadeIn">
                             <div key={currencyKey} className="bolsa-card">
                                     <div className='bolsa-name'>
                                         <h2>{currency.name} ({currencyKey})</h2>

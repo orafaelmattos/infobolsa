@@ -26,7 +26,7 @@ export default function Main() {
             <section className='image-container'>
                 <img src={Image} alt='image-background' className='image-background' />
                 <div className='content'>
-                    <img src={Logo} alt='logo' />
+                    <img src={Logo} alt='logo' className='cssanimation fadeIn'/>
                     <div className='title'>
                         <h1 className='cssanimation typing'>Seu lugar na bolsa</h1>
                         <p>Explore as oportunidades do mercado financeiro.</p>

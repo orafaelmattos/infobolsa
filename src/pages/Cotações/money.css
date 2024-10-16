@@ -82,3 +82,8 @@
     position: relative; 
     z-index: 1;
 }
+
+.money-card span {
+    font-size: 18px;
+    font-weight: bold;
+}
